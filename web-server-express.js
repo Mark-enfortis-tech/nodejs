@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
 
-process.env.NODE_ENV = "development";
+process.env.NODE_ENV = "testing";
 
 app.get('/', (req, res) => {
     const date = JSON.stringify(Date.now());
-    res.send(`Hi from your brand new webserver the date is: ${date}`);
+    res.send(`Hi from the webserver the date is: ${date}`);
 });
 const port = 3000;
 

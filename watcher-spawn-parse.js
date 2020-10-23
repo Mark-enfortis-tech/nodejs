@@ -16,8 +16,9 @@ fs.watch(filename, () => {
 
     ls.on('close', () => {
         const parts = output.split(/|s+/);
-        onsole.log([parts[0], parts[4], parts[8]]);
+        console.log([parts[0], parts[1], parts[2]]);
     });
 });
+console.log(`Now watching ${filename} for changes`);
 
 
